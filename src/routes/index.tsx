@@ -283,6 +283,15 @@ function Home() {
                 {isLoading && <LoadingIndicator />}
               </div>
             </div>
+{/* Alien Face Centered Above Chat Input */}
+<div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-30 pointer-events-none">
+  <img
+    src="/alien-avatar.png"
+    alt="Alien Face"
+    className="w-20 h-20 opacity-70"
+    style={{ filter: 'drop-shadow(0 0 5px rgba(0, 255, 0, 0.7))' }}
+  />
+</div>
 
             {/* Input */}
             <ChatInput 
